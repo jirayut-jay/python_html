@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <py-script>
+import json
+
+json_data = '''
+{
+    "name" : "John Cena",
+    "age"  : 30 ,
+    "city" : "New York"
+}
+'''
+
+json_string = json.loads(json_data)
+
+print(json_string["name"])
+print(json_string["age"])
+print(json_string[""])
+
+    </py-script>
+    <a href="http://google.com" target = "_blank">เปิดเว็บกูเกิล</a>
+    
+</body>
+</html>
